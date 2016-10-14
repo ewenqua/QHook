@@ -1,0 +1,15 @@
+LIBRARY HookDll
+EXPORTS
+ 
+ GetDockedCount
+ ShellProc
+ KeyboardProc
+ MouseProc
+ InitDll
+ UnSubclass
+ SetRecordStatus
+ 
+ SECTIONS
+
+  Shared EXECUTE READ WRITE SHARED
+  SharedBss READ WRITE SHARED

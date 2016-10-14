@@ -1,0 +1,211 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HTW DIALOGEX 0, 0, 301, 329
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "HideThatWindow!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    ICON            "",IDC_FIND,273,220,20,20
+    LTEXT           "Find:",IDC_STATIC,250,225,17,8
+    GROUPBOX        "Mode",IDC_STATICMODE,244,246,50,31
+    GROUPBOX        "Properties",IDC_GROUP_PROPS,7,246,233,76
+    LTEXT           "X:",IDC_STATIC,126,291,8,8
+    LTEXT           "Y:",IDC_STATIC,184,291,8,8
+    LTEXT           "W:",IDC_STATIC,126,310,10,8
+    LTEXT           "H:",IDC_STATIC,184,310,8,8
+    LTEXT           "Text:",IDC_STATIC,11,259,22,8
+    LTEXT           "WindowClass:",IDC_STATIC,11,274,45,8
+    CONTROL         "",IDC_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,233,238
+    PUSHBUTTON      "Show/Hide",IDC_BUTTON_SHOWHIDE,244,7,50,14
+    PUSHBUTTON      "Bring up",IDC_BUTTON_BRINGUP,244,21,50,14
+    PUSHBUTTON      "Close",IDC_BUTTON_CLOSE,244,39,50,14
+    PUSHBUTTON      "Minimize",IDC_BUTTON_MINIMIZE,244,57,50,14
+    PUSHBUTTON      "Maximize",IDC_BUTTON_MAXIMIZE,244,72,50,14
+    PUSHBUTTON      "Send to tray",IDC_BUTTON_TOTRAY,244,89,50,14
+    PUSHBUTTON      "Dock",IDC_BUTTON_DOCK,244,105,50,14
+    CONTROL         "In taskbar",IDC_CHECK_INTASKBAR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,123,48,10
+    CONTROL         "Top-most",IDC_CHECKAOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,133,48,10
+    CONTROL         "Focusable",IDC_CHECKFOCUS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,143,48,10
+    CONTROL         "",IDC_SLIDER_TRANS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,241,171,53,15
+    CONTROL         "Simple",IDC_RADIOSIMPLE,"Button",BS_AUTORADIOBUTTON,248,255,34,10
+    CONTROL         "Advanced",IDC_RADIOADV,"Button",BS_AUTORADIOBUTTON,248,264,42,10
+    PUSHBUTTON      "Update list",IDC_BUTTON_UPDATE,244,294,50,14
+    PUSHBUTTON      "About",IDC_BUTTON_ABOUT,244,308,50,14
+    EDITTEXT        IDC_TEXT,58,254,177,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_WCLASS,58,269,177,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_X,136,286,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,194,286,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_W,136,305,41,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_H,194,305,41,14,ES_AUTOHSCROLL
+    LTEXT           "Transparency ",IDC_STATIC,245,164,47,8
+    PUSHBUTTON      "Repeat",IDC_BUTTON_REPEAT,7,308,50,14
+    PUSHBUTTON      "Start REC",IDC_BUTTON_RECORD,7,290,50,14
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 237, 163
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About HideThatWindow!"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,180,141,50,14
+    ICON            "",IDC_ABOUTICON,181,7,21,20
+    LTEXT           "HideThatWindow! Blablabla... (abouttext)",IDC_ABOUTTEXT,7,7,171,148
+END
+
+IDD_PROPS DIALOGEX 0, 0, 118, 46
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "Transparency"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,25,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,25,50,14
+    CONTROL         "",IDC_SLIDER_TRANS,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,7,7,104,18
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_HTW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 294
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 322
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_PROPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON                ICON                    "icon.ico"
+IDI_FINDER              ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CFINDER             CURSOR                  "cursor1.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENUDOCK MENU
+BEGIN
+    POPUP "Dock"
+    BEGIN
+        MENUITEM "Left",                        ID_DOCK_LEFT
+        MENUITEM "Top",                         ID_DOCK_TOP
+        MENUITEM "Right",                       ID_DOCK_RIGHT
+        MENUITEM "Bottom",                      ID_DOCK_BOTTOM
+        MENUITEM SEPARATOR
+        MENUITEM "Undock",                      ID_DOCK_UNDOCK
+    END
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Swedish (Sweden) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_SVE)
+LANGUAGE LANG_SWEDISH, SUBLANG_SWEDISH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Swedish (Sweden) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

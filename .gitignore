@@ -1,0 +1,5 @@
+Debug/
+HookDll/Debug/
+QHook/Debug/
+
+*.sdf
